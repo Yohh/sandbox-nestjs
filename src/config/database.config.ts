@@ -10,4 +10,5 @@ export const databaseConfig: DataSourceOptions = {
   database: process.env.DATABASE,
   entities: [__dirname + '/../**/*.entity{.ts,.js}'],
   synchronize: false,
+  connectTimeout: 30000,
 };
