@@ -4,7 +4,7 @@ import 'dotenv/config';
 export const databaseConfig: DataSourceOptions = {
   type: 'mysql',
   host: process.env.host,
-  port: parseInt(process.env.port, 10),
+  port: parseInt(process.env.port, 10) || 3306,
   username: process.env.username,
   password: process.env.password,
   database: process.env.database,
